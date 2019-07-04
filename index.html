@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Gadget Sign Up Form By Daniel Hernández">
+    <link rel="shortcut icon" href="images/logo-ico.ico" type="image/x-icon">
+    <title>Gadget sign up form</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://kit.fontawesome.com/87b8bff04b.js"></script>
+</head>
+<body>
+    <h1>Gadget sign up form</h1>
+    <main>
+        <div class="info">
+            <h2>Manage your gadgets account</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere repellat deleniti sed rerum ea enim ab
+                ex? Magnam tenetur saepe eligendi impedit eaque reprehenderit dignissimos, quo sunt erro</p>
+            <img src="images/b11.png" alt="Computadora">
+        </div>
+        <div class="form_register">
+            <form action="#" method="post" id="form" onsubmit="return false;">
+                <h2>Sign Up here</h2>
+                <div>
+                    <input type="text" name="txtName" id="txtName" placeholder="Name">
+                    <span><i class="fas fa-user"></i> |</span>
+                    <label class="errorUser"></label>
+                </div>
+                <div>
+                    <input type="text" name="txtPhone" id="txtPhone" placeholder="01234567">
+                    <span><i class="fas fa-phone"></i> |</span>
+                    <label class="errorPhone">Telefono no valido</label>
+
+                </div>
+                <div>
+                    <input type="email" name="txtEmail" id="txtEmail" placeholder="Email">
+                    <span><i class="fas fa-envelope"></i> |</span>
+                    <label class="errorEmail">Email no valido</label>
+                </div>
+                <div>
+                    <input type="password" name="txtPassword" id="txtPassword" placeholder="Password">
+                    <span><i class="fas fa-lock"></i> |</span>
+                    <label class="errorPassword"></label>
+
+                </div>
+                <div class="options">
+                    <div id="one">
+                        <input type="checkbox" name="chkRemember" id="chkRemember">
+                        <label for="chkRemember">Remember Me</label>
+                    </div>
+                    <div id="two"><a href="#">Forgot password...?
+                        </a></div>
+                </div>
+                <input type="submit" value="Sign up">
+                <p class="register">Dont't have an account? <a href="#">Login Here</a></p>
+            </form>
+        </div>
+    </main>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
