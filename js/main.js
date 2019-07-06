@@ -37,9 +37,10 @@ window.addEventListener('load', ()=>{
         }
 
         // Validate User
-        if(name.value=='' || name.value==null){
+        if(name.value.trim()=='' || name.value==null){
             name.style.borderBottom = '1px solid red';
             iconUser.style.color='red';
+            name.value="";
             inputUser();
         }
         else if(!caracterValido.test(name.value)){
@@ -67,9 +68,10 @@ window.addEventListener('load', ()=>{
         }
 
         // Validate Phone
-        if(phone.value=='' || phone.value.length<=0){
+        if(phone.value.trim()=='' || phone.value.length<=0){
             phone.style.borderBottom= '1px solid red';
             iconPhone.style.color= 'red';
+            phone.value="";
             inputPhone();
         }
         else if(phone.value.length<=6){
@@ -97,9 +99,10 @@ window.addEventListener('load', ()=>{
         }
 
         // Validate email
-        if(email.value=='' || email.value==null){
+        if(email.value.trim()=='' || email.value==null){
             email.style.borderBottom= '1px solid red';
             iconEmail.style.color= 'red';
+            email.value="";
             inputEmail();
         }
         else if(!patron.test(email.value)){
@@ -115,9 +118,10 @@ window.addEventListener('load', ()=>{
         }
 
         // Validate Password
-        if(password.value=='' || password.value==null){
+        if(password.value.trim()=='' || password.value==null){
             password.style.borderBottom= '1px solid red';
             iconLock.style.color= 'red';
+            password.value="";
             inputPassword();
         }
         else if( password.value.length <=4){
